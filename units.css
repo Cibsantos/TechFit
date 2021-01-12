@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 100px;
+    background: linear-gradient(to bottom, #444343, #5e5c5c, #666565);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#navegation ul li {
+    display: inline;
+    padding: 25px;
+    text-transform: uppercase;
+}
+
+#navegation a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#navegation a:hover{
+    color: #f8760c;
+}
+
+
+.units-title{
+    text-transform: uppercase;
+    color: #f8760c;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.units-title strong{
+    color: #303030;
+}
+
+.units-title p {
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.units-maps{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.units-mapsTitle{
+    color: #f8760c;
+}
+
+.units-mapsBtn{
+    width: 135px;
+    height: 30px;
+    border: none;
+    background: #f8760c;
+    color: #ffffff;
+}
+
+.units-mapsBtn:hover{
+    background: #ee8026;
+    cursor: pointer;
+}
+
+.units-mapsBranches :nth-child(5){
+    margin-bottom: 15px;
+}
+
+.units-mapsBranches :nth-child(6){
+    margin-bottom: 15px;
+}
+
+
+
+footer {
+    
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom, #444343, #5e5c5c, #666565);
+    
+}
+
+@media screen and (min-width:320px){
+    body {
+        background: #ffffff;
+    }
+    header, #navegation {
+        width: auto;
+    }
+    #container {
+        width: 100%;
+    }
+    #navegation ul li {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .units-maps{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .units-maps iframe{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:590px){
+    #navegation ul li {
+        flex-direction: row;
+        font-size: 10px;        
+    }
+}
+
+@media screen and (min-width:1000px){
+    #navegation ul li {
+        
+        font-size: 16px;        
+    }
+
+    .units-title{
+        margin-top: 20px;
+    }
+
+    .units-maps{
+        flex-direction: row;
+        
+    }
+
+    .units-mapsBranches{
+        width: 45%;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+
+
+}
